@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hi,my name is Khanim",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Hi,my name is Khanim",
+      "author": "web Developer"
+    },
+    {
+      "id": 3,
+      "title": "Hi,my name is Khanim",
+      "author": "Backend"
+    },
+    {
+      "id": 4,
+      "title": "Hi,my name is Khanim",
+      "author": "Frontend"
+    },
+    {
+      "id": 6,
+      "title": "Hi,my name is Khanim",
+      "author": "typicode"
+    },
+    {
+      "id": 7,
+      "title": "Hi,my name is Khanim",
+      "author": "typicode"
+    },
+    {
+      "id": 8,
+      "title": "Hi,my name is Khanim",
+      "author": "typicode"
+    },
+    {
+      "id": 9,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 10,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

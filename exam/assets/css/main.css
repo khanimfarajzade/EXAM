@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul, ol, a, li {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+header .navHeading {
+  display: none;
+  padding: 20px 0;
+  background-color: #eeeeee;
+}
+header .navHeading .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ababab;
+}
+header .navHeading .container div {
+  display: flex;
+  gap: 10px;
+}
+header .navHeading .container ul {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+}
+header .navHeading .container ul li {
+  background-color: #ababab;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar {
+  display: flex;
+}
+header .navbar .detskopMenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .detskopMenu ul {
+  text-transform: uppercase;
+  display: flex;
+  gap: 8px;
+}
+header .navbar .detskopMenu ul #active {
+  color: rgb(83, 185, 219);
+}
+header .navbar .detskopMenu ul li:hover {
+  color: rgb(83, 185, 219);
+}
+header .navbar .mobilMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: black;
+    color: #fff;
+  }
+  header .navHeading {
+    display: none;
+  }
+  header .navbar {
+    padding: 10px 0;
+  }
+  header .navbar .detskopMenu {
+    align-items: baseline;
+  }
+  header .navbar .detskopMenu ul {
+    display: none;
+  }
+  header .navbar .mobilMenu {
+    display: block;
+  }
+  header .navbar .mobilMenu ul {
+    height: 0px;
+    overflow: hidden;
+  }
+  header .navbar .mobilMenu .list {
+    height: auto;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(94, 189, 221);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 20px;
+  transform: translate(10%);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 80px;
+  display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  text-shadow: 2px 2px 2px gray;
+  font-size: 32px;
+  transform: translate(20%);
+  position: absolute;
+  top: 30%;
+  width: 60%;
+}
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .numbertext {
+    color: #fff;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 24px;
+    transform: translate(20%);
+    position: absolute;
+    top: 15%;
+    width: 60%;
+  }
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+}
+
+main {
+  position: relative;
+}
+main #learnMoreSection {
+  padding: 40px 0;
+}
+main #learnMoreSection .container .learnMoreCardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #learnMoreSection .container .learnMoreCardContainer .card {
+  width: 30%;
+  text-align: center;
+}
+main #learnMoreSection .container .learnMoreCardContainer .card i {
+  font-size: 24px;
+  padding: 8px;
+  border: 1px solid #00ccff;
+  margin: 10px 0;
+}
+main #learnMoreSection .container .learnMoreCardContainer .card p {
+  margin: 10px 0;
+  color: gray;
+}
+main #learnMoreSection .container .learnMoreCardContainer .card button {
+  border: none;
+  color: #ffffff;
+  height: 30px;
+  width: 100px;
+  background-color: #00ccff;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  main #learnMoreSection .container .learnMoreCardContainer .card {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+main #ourAwesomeProject {
+  padding: 40px 0;
+  background-color: #eeeeee;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectHeading {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectHeading hr {
+  margin: auto;
+  width: 30px;
+  border-color: #00ccff;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectHeading p {
+  margin: 20px 0;
+  color: gray;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards ul {
+  width: 80%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: auto;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards ul #activeLi {
+  color: rgb(83, 185, 219);
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards ul li:hover {
+  color: rgb(83, 185, 219);
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer .mycard {
+  position: relative;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer .mycard div {
+  text-align: center;
+  color: #ffffff;
+  background-color: #00ccff;
+  top: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer .mycard:hover div {
+  opacity: 0.8;
+  transition: 600ms;
+}
+@media screen and (max-width: 768px) {
+  main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer {
+    grid-template-columns: auto;
+  }
+  main #ourAwesomeProject .container .ourAwesomeProjectCards .cardContainer .mycard img {
+    width: 100%;
+  }
+}
+main #meetOurTeam {
+  padding: 40px 0;
+  background-color: #eeeeee;
+}
+main #meetOurTeam .container .meetOurTeamHeading {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+main #meetOurTeam .container .meetOurTeamHeading hr {
+  margin: auto;
+  width: 30px;
+  border-color: #00ccff;
+}
+main #meetOurTeam .container .meetOurTeamHeading p {
+  margin: 20px 0;
+  color: gray;
+}
+main #meetOurTeam .container .meetOurTeamCards .cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+}
+main #meetOurTeam .container .meetOurTeamCards .cardContainer .mycard {
+  background-color: #00ccff;
+  position: relative;
+}
+main #meetOurTeam .container .meetOurTeamCards .cardContainer .mycard div {
+  background-color: #00ccff;
+  color: #ffffff;
+}
+main #meetOurTeam .container .meetOurTeamCards .cardContainer .mycard .hoverDiv {
+  text-align: center;
+  color: #ffffff;
+  background-color: #00ccff;
+  top: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+main #meetOurTeam .container .meetOurTeamCards .cardContainer .mycard:hover .hoverDiv {
+  opacity: 0.5;
+  transition: 600ms;
+}
+@media screen and (max-width: 768px) {
+  main #meetOurTeam .container .meetOurTeamCards .cardContainer {
+    grid-template-columns: auto;
+  }
+  main #meetOurTeam .container .meetOurTeamCards .cardContainer .mycard img {
+    width: 100%;
+  }
+}
+main .btnButton {
+  margin: 20px;
+  background-color: green;
+  height: 30px;
+  width: 100px;
+  border: none;
+  position: relative;
+  left: 40%;
+  color: #ffffff;
+}
+
+.learnMoreCardContainerDelete {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.learnMoreCardContainerDelete .card {
+  width: 30%;
+  text-align: center;
+}
+.learnMoreCardContainerDelete .card i {
+  font-size: 24px;
+  padding: 8px;
+  border: 1px solid #00ccff;
+  margin: 10px 0;
+}
+.learnMoreCardContainerDelete .card p {
+  margin: 10px 0;
+  color: gray;
+}
+.learnMoreCardContainerDelete .card button {
+  border: none;
+  color: #ffffff;
+  height: 30px;
+  width: 100px;
+  background-color: #00ccff;
+  border-radius: 6px;
+}/*# sourceMappingURL=main.css.map */

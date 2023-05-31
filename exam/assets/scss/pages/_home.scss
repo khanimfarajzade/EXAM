@@ -1,0 +1,270 @@
+main {
+  position: relative;
+  // top: 15vh;
+  //    learnMoreSection strarted
+  #learnMoreSection {
+    padding: 40px 0;
+    .container {
+      .learnMoreCardContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card {
+          width: 30%;
+          text-align: center;
+          i {
+            font-size: 24px;
+            padding: 8px;
+            border: 1px solid #00ccff;
+            margin: 10px 0;
+          }
+          p {
+            margin: 10px 0;
+            color: gray;
+          }
+          button {
+            border: none;
+            color: #ffffff;
+            height: 30px;
+            width: 100px;
+            background-color: #00ccff;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #learnMoreSection {
+      .container {
+        .learnMoreCardContainer {
+          .card {
+            width: 95%;
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  //    learnMoreSection ended
+
+
+  //ourAwesomeProject start
+  #ourAwesomeProject {
+    padding: 40px 0;
+    background-color: #eeeeee;
+    .container {
+      .ourAwesomeProjectHeading {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        hr {
+          margin: auto;
+          width: 30px;
+          border-color: #00ccff;
+        }
+        p {
+          margin: 20px 0;
+          color: gray;
+        }
+      }
+      .ourAwesomeProjectCards {
+        ul {
+          width: 80%;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+          gap: 8px;
+          margin: auto;
+          #activeLi {
+            color: rgb(83, 185, 219);
+          }
+          li:hover {
+            color: rgb(83, 185, 219);
+          }
+        }
+        .cardContainer{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 5px;
+            .mycard {
+                position: relative;
+                div {
+                    text-align: center;
+                  color: #ffffff;
+                  background-color: #00ccff;
+                  top: 0;
+                  position: absolute;
+                  left: 0;
+                  opacity: 0;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .mycard:hover {
+                div {
+                  opacity: 0.8;
+                  transition: 600ms;
+                }
+              }
+        }
+       
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #ourAwesomeProject {
+     
+        .container {
+        
+          .ourAwesomeProjectCards {
+         
+            .cardContainer{
+              
+                grid-template-columns: auto;
+               
+                .mycard {
+                  
+                    img{
+                       
+                        width: 100%;
+                    }
+                 
+                  }
+                
+           
+          }
+        }
+      }
+  }
+
+}
+
+//ourAwesomeProject start end
+
+ //meetOurTeam start
+ #meetOurTeam {
+    padding: 40px 0;
+    background-color: #eeeeee;
+    .container {
+      .meetOurTeamHeading {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        hr {
+          margin: auto;
+          width: 30px;
+          border-color: #00ccff;
+        }
+        p {
+          margin: 20px 0;
+          color: gray;
+        }
+      }
+      .meetOurTeamCards {
+      
+        .cardContainer{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 5px;
+            .mycard {
+                background-color: #00ccff;
+                position: relative;
+                div{
+                   
+                    background-color: #00ccff;
+                    color: #ffffff;
+                }
+                .hoverDiv{
+                    text-align: center;
+                  color: #ffffff;
+                  background-color: #00ccff;
+                  top: 0;
+                  position: absolute;
+                  left: 0;
+                  opacity: 0;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .mycard:hover {
+                .hoverDiv{
+                  opacity: 0.5;
+                  transition: 600ms;
+                }
+              }
+        }
+       
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #meetOurTeam {
+     
+        .container {
+        
+          .meetOurTeamCards {
+         
+            .cardContainer{
+              
+                grid-template-columns: auto;
+               
+                .mycard {
+                  
+                    img{
+                       
+                        width: 100%;
+                    }
+                 
+                  }
+                
+           
+          }
+        }
+      }
+  }
+
+}
+.btnButton{
+  margin: 20px;
+  background-color: green;
+  height: 30px;
+  width: 100px;
+  border: none;
+  position: relative;
+ left: 40%;
+ color: #ffffff;
+}
+//meetOurTeam start end
+}
+
+
+.learnMoreCardContainerDelete {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .card {
+    width: 30%;
+    text-align: center;
+    i {
+      font-size: 24px;
+      padding: 8px;
+      border: 1px solid #00ccff;
+      margin: 10px 0;
+    }
+    p {
+      margin: 10px 0;
+      color: gray;
+    }
+    button {
+      border: none;
+      color: #ffffff;
+      height: 30px;
+      width: 100px;
+      background-color: #00ccff;
+      border-radius: 6px;
+    }
+  }
+}
